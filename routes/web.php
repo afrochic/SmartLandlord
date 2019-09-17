@@ -12,8 +12,14 @@
 */
 
 Route::get('/', function () { // the slash means homePage
-    return view('login');
+    return view('');
 });
+
+//bett's  edit
+Route::get('/main', 'Controller@index');// route to login page
+Route::post('/main/checklogin', 'Controller@checklogin');
+Route::get('/main/logout', 'Controller@logout');  // to logout
+//end of bett's edit
 
 /*Route::get('/welcome',function(){
 	return view('welcome');
@@ -22,12 +28,9 @@ Route::get('/', function () { // the slash means homePage
 Route::get('/home',function(){
 	return view('home');
 });
-Route::get('profits',function(){
+Route::get('/profits',function(){
 	return view('profits');
 });
-Route::get('buidings',function(){
-	return view('buidings');
-});
-Route::get('/main',function(){
-	return view('login');
+Route::get('/buildings',function(){
+	return view('buildings');
 });
