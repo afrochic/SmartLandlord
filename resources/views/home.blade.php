@@ -40,12 +40,13 @@
             <nav class="navbar navbar-style navbar-right">
                 <div class="container">
                     <div class="navbar-header">
-                        <a href=""><img class="logo"src="CHADY.png"alt="home"></a>
+                        <a href="{{ url('/home') }}"><img class="logo"src="CHADY.png"alt="home"></a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Buidlings</a></li>
-                        <li><a href="">Profit Report</a></li>
+                    //working href links
+                        <li><a href="{{ url('/home') }}">Home</a></li>
+                        <li><a href="{{ url('/buildings') }}">Buidlings</a></li>
+                        <li><a href="{{ url('/profits') }}">Profit Report</a></li>
                     </ul>
                 </div>
             </nav>
@@ -82,5 +83,11 @@
     <div>
     
         </div>
+        <!--logout button-->
+        <a href="{{ url('/main/logout') }}">Logout</a>
     </body>
 </html>
+<!--
+  added logout button, copy paste it anywhere you like
+  made links to buildings, profits and home on this page(home.blade.php), copy paste it to the other pages
+-->
