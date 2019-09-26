@@ -34,3 +34,8 @@ Route::get('/profits',function(){
 Route::get('/buildings',function(){
 	return view('buildings');
 });
+
+
+Route::get('/dashboard',function(){
+	return view('dashboard');
+});
