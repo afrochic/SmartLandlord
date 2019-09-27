@@ -10,7 +10,10 @@ return [
     | This value is the name of your application. This value is used when the
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
+<<<<<<< HEAD
     |
+=======
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
     */
 
     'name' => env('APP_NAME', 'Laravel'),
@@ -22,7 +25,11 @@ return [
     |
     | This value determines the "environment" your application is currently
     | running in. This may determine how you prefer to configure various
+<<<<<<< HEAD
     | services the application utilizes. Set this in your ".env" file.
+=======
+    | services your application utilizes. Set this in your ".env" file.
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
     |
     */
 
@@ -54,8 +61,11 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+<<<<<<< HEAD
     'asset_url' => env('ASSET_URL', null),
 
+=======
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -97,6 +107,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
     | Faker Locale
     |--------------------------------------------------------------------------
     |
@@ -122,6 +133,37 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
+=======
+    | Encryption Key
+    |--------------------------------------------------------------------------
+    |
+    | This key is used by the Illuminate encrypter service and should be set
+    | to a random, 32 character string, otherwise these encrypted strings
+    | will not be safe. Please do this before deploying an application!
+    |
+    */
+
+    'key' => env('APP_KEY'),
+
+    'cipher' => 'AES-256-CBC',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Logging Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure the log settings for your application. Out of
+    | the box, Laravel uses the Monolog PHP logging library. This gives
+    | you a variety of powerful log handlers / formatters to utilize.
+    |
+    | Available Settings: "single", "daily", "syslog", "errorlog"
+    |
+    */
+
+    'log' => env('APP_LOG', 'single'),
+
+    'log_level' => env('APP_LOG_LEVEL', 'debug'),
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
 
     /*
     |--------------------------------------------------------------------------
@@ -165,6 +207,10 @@ return [
         /*
          * Package Service Providers...
          */
+<<<<<<< HEAD
+=======
+        Laravel\Tinker\TinkerServiceProvider::class,
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
 
         /*
          * Application Service Providers...
@@ -191,7 +237,10 @@ return [
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
+<<<<<<< HEAD
         'Arr' => Illuminate\Support\Arr::class,
+=======
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
@@ -221,7 +270,10 @@ return [
         'Schema' => Illuminate\Support\Facades\Schema::class,
         'Session' => Illuminate\Support\Facades\Session::class,
         'Storage' => Illuminate\Support\Facades\Storage::class,
+<<<<<<< HEAD
         'Str' => Illuminate\Support\Str::class,
+=======
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,

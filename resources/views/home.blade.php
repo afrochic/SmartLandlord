@@ -1,7 +1,49 @@
+<<<<<<< HEAD
 @extends('layouts.landingPage')
 
 @section('content')
 <header class="header">
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Chady Enterprises</title>
+        <meta charsey="utf-8">
+        <link rel="stylesheet" type="text/css" href="chadyApplication.css">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        <style>
+                *
+                {
+                    margin:0;
+                    padding:0;
+                }
+                .header
+                {
+                    height:100vh;
+                }
+                .navbar-style
+                {
+                    box-shadow: 0 5px 10px #efefef;
+                    text-transform:uppercase;
+                }
+                .logo
+                {
+                    height:100px;
+                    padding:2px 10px;
+                }
+
+        </style>
+    </head>
+    <body>
+        <header class="header">
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
             <nav class="navbar navbar-style navbar-right">
                 <div class="container">
                     <div class="navbar-header">
@@ -12,7 +54,10 @@
                         <li><a href="{{ url('/home') }}">Home</a></li>
                         <li><a href="{{ url('/buildings') }}">Buidlings</a></li>
                         <li><a href="{{ url('/profits') }}">Profit Report</a></li>
+<<<<<<< HEAD
                         <li><a href="{{ url('/main/logout') }}">Logout</a></li>
+=======
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
                     </ul>
                 </div>
             </nav>
@@ -50,5 +95,15 @@
     
         </div>
         <!--logout button-->
+<<<<<<< HEAD
         
 @endsection
+=======
+        <a href="{{ url('/main/logout') }}">Logout</a>
+    </body>
+</html>
+<!--
+  added logout button, copy paste it anywhere you like
+  made links to buildings, profits and home on this page(home.blade.php), copy paste it to the other pages
+-->
+>>>>>>> 536063ca2aa1cd12ad3bc18c1bf0354cbaff6c87
